@@ -4,7 +4,7 @@ const getSortedUniqueSkills = (users) => {
   const getSkills = (users) =>
     users.reduce((skills, user) => {
       skills.push(...user.skills);
-      return slills;
+      return skills;
     }, []);
   const skills = getSkills(users);
   const allSkills = skills
