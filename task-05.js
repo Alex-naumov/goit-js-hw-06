@@ -2,8 +2,9 @@ import users from "./users.js";
 
 const getUserWithEmail = (users, email) => {
   users.filter((user) => {
-    user.email === email;
-    return user;
+    if (user.email === email) {
+      return user;
+    }
   });
 };
 
