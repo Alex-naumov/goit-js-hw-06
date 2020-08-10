@@ -1,11 +1,14 @@
 import users from "./users.js";
 
 const getUserWithEmail = (users, email) => {
+  const userObj
   users.filter((user) => {
     if (user.email === email) {
-      console.log(user);
+       userObj = user;
     }
+    
   });
+  return userObj;
 };
 
 console.log(getUserWithEmail(users, "shereeanthony@kog.com")); // {объект пользователя Sheree Anthony}
