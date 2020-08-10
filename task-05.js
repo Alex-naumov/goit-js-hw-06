@@ -3,7 +3,7 @@ import users from "./users.js";
 const getUserWithEmail = (users, email) => {
   users.filter((user) => {
     if (user.email === email) {
-      return user;
+      console.log(user);
     }
   });
 };
